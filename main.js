@@ -78,4 +78,15 @@ container.addEventListener("click", (event) => {
     typeBox.textContent = operation
 
     console.log(operation)
+
+    if(operation != "") {
+        typeBox.removeAttribute("style", "color: #666;")
+        typeBox.setAttribute("style", "color: whitesmoke;")
+    }
+    
 })
+
+if(operation == "") {
+    typeBox.textContent = "Input a calculation"
+    typeBox.setAttribute("style", "color: #666; font-size: 20px; padding: 23px;")
+}

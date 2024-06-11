@@ -49,3 +49,8 @@ button, .input, .container {
 .operator {
     background-color: #ff8f0e;
 }
+
+#clear {
+    width: 100%;
+    background-color: #1689ec;
+}
