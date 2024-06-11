@@ -82,8 +82,17 @@ container.addEventListener("click", (event) => {
     if(operation != "") {
         typeBox.removeAttribute("style", "color: #666;")
         typeBox.setAttribute("style", "color: whitesmoke;")
+        
     }
     
+})
+
+document.querySelector("#clear").addEventListener("click", () => {
+    console.log("reset")
+    operation = ""
+    typeBox.textContent = "Input a calculation"
+    console.log("Ok, you clicked reset!")
+    typeBox.setAttribute("style", "color: #666; font-size: 20px; padding: 23px;")
 })
 
 if(operation == "") {
